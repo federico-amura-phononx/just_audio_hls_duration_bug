@@ -45,7 +45,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     // Try to load audio from a source and catch any errors.
     try {
       final audioSource =
-          HlsAudioSource(Uri.parse("https://api.carbonvoice.app/v2/stream/638f6e5bec2a35100e2f1d9a/stream.m3u8?pxtoken=tJvxSmnEG17qK2WL"));
+          HlsAudioSource(Uri.parse("https://pxmessages.s3.us-east-2.amazonaws.com/stream/638f6e5bec2a35100e2f1d9a/stream.m3u8"));
       await _player.setAudioSource(audioSource);
 
       // // AAC example: https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.aac
